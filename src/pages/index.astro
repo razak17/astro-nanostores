@@ -1,0 +1,18 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Form from "../components/Form";
+import Table from "../components/Table";
+---
+
+<Layout title="Welcome to Astro.">
+  <main>
+    <Form client:only />
+    <Table client:only />
+  </main>
+</Layout>
+
+<style>
+  main {
+    padding: 1.5rem;
+  }
+</style>
